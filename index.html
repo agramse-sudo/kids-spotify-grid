@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kids Spotify Grid</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Kids Music Grid</h1>
+      <p>Tap a card to load and play a favorite song.</p>
+    </header>
+
+    <main>
+      <section id="song-grid" class="song-grid" aria-label="Song grid"></section>
+    </main>
+
+    <aside class="now-playing" aria-label="Now playing">
+      <h2 id="now-playing-title">Pick a song</h2>
+      <div id="now-playing-embed" class="embed-wrap"></div>
+      <div class="player-controls">
+        <button id="prev-btn" type="button" aria-label="Previous song">⏮</button>
+        <button id="play-btn" type="button" aria-label="Play selected song">▶</button>
+        <button id="next-btn" type="button" aria-label="Next song">⏭</button>
+      </div>
+    </aside>
+
+    <script src="app.js"></script>
+  </body>
+</html>
